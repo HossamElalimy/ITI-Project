@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+    background-color: #000000;
+}
+
+header .logo {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: 1px solid #1c1a1a;
+  color: #ffffff;
+  background: none;
+  cursor: pointer; 
+  font-size: 14px;
+  border-radius: 2px;
+}
+.btn-outline
+{
+margin-left: 10px;
+  padding: 8px 12px;
+  border: 1px solid #1c1a1a;
+  color: #ffffff;
+  background: none;
+  cursor: pointer; 
+  font-size: 14px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+.login-box {
+  background: #fff;
+  padding: 40px;
+  width: 400px;
+}
+.login-box h1 {
+  margin-bottom: 20px;
+}
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-submit {
+  background: #004d4d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.forgot-link {
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none;
+}
+.login-box p {
+  margin-top: 20px;
+}
+.login-box p a {
+  color: #004d4d;
+  text-decoration: none;
+}
+.main-footer {
+  background: #000000;
+  padding: 40px 0;
+  line-height: 35px;
+}
+.footer-grid {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+.footer-box {
+  width: 100px;
+  height: 50px;
+  background: #ccc;
+}
+.footer-grid h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-grid ul li {
+  margin-bottom: 6px;
+}
+.footer-grid a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.partner-section {
+    background-color: white;
+    min-height: 100vh;
+    margin: 50px auto;
+    padding: 150px;
+}
