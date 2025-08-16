@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/style.css">
-    <title>Team Register</title>
+    <link rel="stylesheet" href="../Styles/front.css">
+    <title>E-Sports</title>
 </head>
 <body>
     <header class="main-header">
@@ -27,76 +27,30 @@
         </div>
     </div>
 </header>
-    <main class="team-register-main">
-  <section class="team-register-section">
-    <h1>Your Teams</h1>
-    <h2>Register your Team!</h2>
-    <form id="teamRegisterForm" class="team-form">
-      <label for="teamName">Team Name</label>
-      <input type="text" id="teamName" name="teamName" required>
+<section class="hero">
+  <div class="hero-content">
+    <h3>01 / 03</h3>
+    <h1>Vikendi <br>Tournament #1</h1>
+    <button>To the Tournament</button>
+  </div>
 
-      <label for="teamPassword">Team Password</label>
-      <input type="password" id="teamPassword" name="teamPassword" required>
-
-      <div class="team-type">
-        <label>Team Type</label>
-        <div class="team-type-options">
-          <input type="radio" id="duo" name="teamType" value="Duo" checked>
-          <label for="duo">Duo Team</label>
-          <input type="radio" id="squad" name="teamType" value="Squad">
-          <label for="squad">Squad Team</label>
-        </div>
-      </div>
-
-      <label>Team Logo</label>
-      <div class="logo-upload" id="logoUpload">
-        <span>Drag and Drop!</span>
-        <input type="file" id="teamLogo" name="teamLogo" accept="image/*" hidden>
-        <button type="button" id="uploadBtn">Upload</button>
-        <div id="logoPreview"></div>
-      </div>
-
-      <button type="submit" class="create-team">Create Team</button>
-    </form>
-  </section>
-  <aside class="team-register-aside"></aside>
-</main>
-
-<footer class="main-footer">
-  <div class="footer-grid">
-    <div class="footer-box"></div>
-    <div>
-      <h4>Menu</h4>
-      <ul>
-        <li><a href="#">Tournaments</a></li>
-        <li><a href="#">Rules</a></li>
-        <li><a href="#">Partner</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Your Teams</a></li>
-      </ul>
+  <div class="hero-slides">
+    <div class="slide">
+      <strong>01</strong>
+      <h4>Vikendi Tournament #1</h4>
+      <p>Short description goes here...</p>
     </div>
-    <div>
-      <h4>Social Media</h4>
-      <ul>
-        <li><a href="#">Twitch</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Discord</a></li>
-      </ul>
+    <div class="slide disabled">
+      <strong>02</strong>
+      <h4>Tournament 02</h4>
+      <p>Coming Soon...</p>
     </div>
-    <div>
-      <h4>Contact</h4>
-      <ul>
-        <li>General questions? <br>
-          <a href="#">Discord Server</a>
-        </li>
-        <li>Business inquiry? <br>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+    <div class="slide disabled">
+      <strong>03</strong>
+      <h4>Tournament 03</h4>
+      <p>Coming Soon...</p>
     </div>
   </div>
-</footer>
-<script src="../js/teamregister.js"></script>
+</section>
 </body>
 </html>
