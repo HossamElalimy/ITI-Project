@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tournaments</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Styles/tournament.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <div class="container">
+          <a class="brand" href="/">
+            <span class="brand-mark" aria-label="Logo"></span>
+          </a>
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="primary-menu"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <div id="primary-menu" class="nav-content">
+            <ul class="nav-links">
+              <li><a class="active" href="tournament.html">Tournaments</a></li>
+              <li><a href="#">Rules</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Teams</a></li>
+              <li><a href="teamregister.html">Your Teams</a></li>
+            </ul>
+            <div class="nav-actions">
+              <button class="btn">Login</button>
+              <button class="btn btn-primary">Registration</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>All Tournaments</h1>
+        </div>
+      </section>
+
+      <section class="tournament-tabs">
+        <div class="container">
+          <button class="tab active">Active</button>
+          <button class="tab">Expired</button>
+        </div>
+      </section>
+
+      <section class="tournament-table">
+        <div class="container">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Mode</th>
+                <th>Time</th>
+                <th>Date</th>
+                <th>Registration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Vikendi Community Tournament #1
+                  <span class="live-badge">LIVE</span>
+                </td>
+                <td>2v2</td>
+                <td>20:00</td>
+                <td>15.05.2020</td>
+                <td><button disabled>Check-in</button></td>
+              </tr>
+              <tr>
+                <td>Being Esports D/A/CH PUBG Summer Championship</td>
+                <td>4v4</td>
+                <td>13:30</td>
+                <td>16.05.2020</td>
+                <td><button>Check-in</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <aside class="tournament-details">
+        <h3>Being Esports D/A/CH PUBG Summer Championship</h3>
+        <p>Duo — 16.05.2020 — 13:30</p>
+        <div class="maps">
+          <strong>Maps:</strong> Vikendi, Erangel, Vikendi, Erangel
+        </div>
+        <div class="prizes">
+          <strong>Prizes:</strong>
+          <ul>
+            <li>1st Place: 200€</li>
+            <li>2nd Place: 100€</li>
+            <li>3rd Place: 50€</li>
+          </ul>
+        </div>
+        <button>Check-in</button>
+      </aside>
+    </main>
+    <script src="js/nav.js"></script>
+  </body>
+</html>

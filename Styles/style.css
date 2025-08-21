@@ -108,8 +108,8 @@ body {
   padding: 40px 60px;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  width: 420px;
-  height: 70vh;
+  width: 30vw;
+  height: 80vh;
   margin-right: 40px;
   margin-left: 10%;
 }
@@ -203,6 +203,12 @@ body {
   right: 15px;
   bottom: 15px;
   transition: 0.3s all ease;
+}
+@media screen and (max-width: 768px) {
+  .team-register-section {
+  width: 80vw;
+}
+  
 }
 .create-team:hover {
   background: #003333;

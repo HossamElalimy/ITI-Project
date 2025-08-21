@@ -1,29 +1,33 @@
 <!DOCTYPE html>
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register</title>
-  <link rel="stylesheet" href="css/log-re.css">
+  <link rel="stylesheet" href="../Styles/style.css">
 </head>
 <body>
 
-  <header>
-  <div class="logo"></div>
-  <nav>
-    <a href="landig-page.html">Tournaments</a>
-    <a href="#">Rules</a>
-    <a href="Partners.html">Partners</a>
-    <a href="#">Teams</a>
-    <a href="#">Your Teams</a>
-    <a href="#">Prices</a>
-  </nav>
-  <div class="auth-buttons">
-    <a href="login.html" class="btn-outline">Login</a>
-    <a href="register.html" class="btn-outline">Register</a>
-  </div>
-  
-</header>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo"></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="tournaments.html">Tournaments</a></li>
+          <li><a href="#">Rules</a></li>
+          <li><a href="partner.html">Partner</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="teamregister.html">Your Teams</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="index.html" class="btn-outline">Login</a>
+        <a href="register.html" class="btn-fill">Register</a>
+      </div>
+    </div>
+  </header>
 
+  <!-- ====== Register Box ====== -->
   <main class="login-section">
     <div class="login-box">
       <h1>Create Account</h1>
@@ -35,45 +39,43 @@
           <button type="submit" class="btn-submit">Register</button>
         </div>
       </form>
-      <p>Already have an account?<a href="login.html">Login</a></p>
+      <p>Already have an account?<a href="index.html">Login</a></p>
     </div>
   </main>
 
   
   <footer class="main-footer">
-  <div class="footer-grid">
-    <div class="footer-box"></div>
-    <div>
-      <h4>Menu</h4>
-      <ul>
-        <li><a href="#">Tournaments</a></li>
-        <li><a href="#">Rules</a></li>
-        <li><a href="#">Partner</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Your Teams</a></li>
-      </ul>
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-box"></div>
+       </div>
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li>Tournaments</li>
+          <li>Rules</li>
+          <li>Partner</li>
+          <li>Teams</li>
+          <li>Your Teams</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Social Media</h4>
+        <ul>
+          <li>Twitch</li>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Discord</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Do you have general questions? <a href="#">Discord Server</a></li>
+          <li>Do you have a business inquiry? <a href="#">Kontakt</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h4>Social Media</h4>
-      <ul>
-        <li><a href="#">Twitch</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Discord</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <ul>
-        <li>General questions? <br>
-          <a href="#">Discord Server</a>
-        </li>
-        <li>Business inquiry? <br>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
