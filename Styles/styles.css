@@ -1,280 +1,77 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
+
+:root{
+  --maxw:1160px;
+  --gutter:28px;
+  --ink:#0b0b0b;
+  --muted:#6b6f76;
+  --line:#e8e8e8;
+  --dark:#111;
+  --hero:#1a1a1a;
+  --teal:#0a4b52;
+  --teal-ink:#e7fbfd;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background-color: #000000;
-}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font:16px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial; color:var(--ink)}
+img{max-width:100%;display:block}
 
-header .logo {
-  width: 50px;
-  height: 50px;
-  background-color: #ccc;
-}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
 
-header nav {
-  display: flex;
-  gap: 15px;
-}
+.site-header.dark{background:#0f0f0f;border-bottom:1px solid #222;position:sticky;top:0;z-index:20}
+.header-inner{display:flex;align-items:center;gap:24px;padding:12px 0}
+.logo-box{width:180px;height:36px;background:#bdbdbd;border-radius:2px}
+.nav{display:flex;gap:18px;flex:1}
+.nav-link{color:#e9e9e9;text-decoration:none;padding:10px 4px;position:relative}
+.nav-link.is-active::after,.nav-link:hover::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:2px;background:#fff;opacity:.9}
+.auth{display:flex;gap:10px}
+.btn{border:1px solid #cfcfcf;background:#fff;border-radius:4px;padding:8px 14px;font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:#e9e9e9;border-color:#e9e9e9}
+.btn.solid{background:#fff;color:#000;border-color:#fff}
+.btn.small{padding:8px 10px;border-radius:6px}
 
-header nav a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 14px;
-}
+.hero.dark{background:linear-gradient(90deg,#191919 60%, #2b2b2b 60%, #2b2b2b 78%, #3a3a3a 78%);color:#fff}
+.hero-title{font-size:56px;line-height:1.05;margin:26px 0}
 
-.auth-buttons button {
-  margin-left: 10px;
-  padding: 8px 12px;
-  border: 1px solid #1c1a1a;
-  color: #ffffff;
-  background: none;
-  cursor: pointer; 
-  font-size: 14px;
-  border-radius: 2px;
-}
+.layout{display:grid;grid-template-columns:1fr 360px;gap:28px;padding:26px 0}
 
-.hero {
-  background-color: #0d0d0d;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
-  padding: 20px;
-  position: relative;
-}
+.searchbar{position:relative;margin-bottom:16px}
+.searchbar input{width:100%;padding:12px 44px 12px 14px;border:1px solid #e6e6e6;border-radius:4px;background:#f2f2f2}
+.searchbar .icon{width:18px;height:18px;position:absolute;right:14px;top:50%;transform:translateY(-50%);fill:#000000}
 
-.hero h1 {
-  color: #fff;
-  font-size: 7em;
-  margin: 0;
-  line-height: 1.2;
-}
-.btn-outline
-{
-margin-left: 10px;
-  padding: 8px 12px;
-  border: 1px solid #1c1a1a;
-  color: #ffffff;
-  background: none;
-  cursor: pointer; 
-  font-size: 14px;
-  border-radius: 2px;
-  text-decoration: none;
-}
+.list-card{border:1px solid var(--line);border-radius:4px;background:#fff}
+.list-head{display:grid;grid-template-columns:120px 1fr;gap:0;padding:10px 16px;color:#7a7a7a;font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:grid;grid-template-columns:120px 1fr;align-items:center;padding:14px 16px;border-top:1px solid var(--line)}
+.list li:hover{background:#f0f0f0}
+.list .logo-s{width:48px;height:48px;background:#111;border-radius:2px;overflow:hidden}
+.list .team-name{font-weight:600}
 
-.btn-cta {
-  margin-top: 20px;
-  padding: 15px 30px;
-  background-color: #fff;
-  color: #222;
-  border-radius: 2px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 16px;
-  width: 140px;
-  
-}
+.pager-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;margin:20px 0}
+.pager{display:flex;gap:8px;justify-content:center}
+.pager .num{width:32px;height:32px;display:grid;place-items:center;background:#0b0b0b;color:#fff;border-radius:2px;font-weight:700;cursor:pointer}
+.pager .num.is-active{outline:2px solid #0b0b0b;background:#0b0b0b}
+.pager .num:disabled{opacity:.5;cursor:not-allowed}
 
-.tournaments-section {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  background-color: #fff;
-}
+.sidebar{display:block}
+.team-card.teal{background:var(--teal);color:var(--teal-ink);border-radius:2px;padding:16px}
+.team-card .team-card-header{display:grid;grid-template-columns:56px 1fr;gap:12px;align-items:center}
+.team-card .logo-s{width:56px;height:56px;border-radius:2px;overflow:hidden;background:#08383c}
+.team-card .team-name{font-weight:800}
+.team-card .kicker{text-transform:uppercase;opacity:.85;letter-spacing:.12em;font-size:12px}
+.team-card .rule{height:1px;background:rgba(255,255,255,.35);margin:12px 0}
+.team-card .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.team-card .hdr{text-transform:uppercase;font-size:11px;opacity:.9;margin-bottom:4px}
+.team-card .mini-list{font-size:14px;line-height:1.6}
+.team-card .join{display:grid;grid-template-columns:1fr 120px;gap:10px;margin-top:14px}
+.team-card input{border:0;border-radius:2px;padding:10px;background:#eaeaea;color:#222}
+.team-card .btn.light{border:0;background:#fff;color:#0b0b0b;border-radius:2px}
 
-.title-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
+.site-footer{border-top:1px solid var(--line);margin-top:28px;background:#fff}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;padding:28px 0}
+.foot-logo{width:180px;height:60px;background:#bdbdbd;border-radius:2px}
+.foot-note{color:#5a5a5a;max-width:420px}
+.foot-links a{color:#0a58a8;text-decoration:none}
 
-.title-section h1 {
-  font-size: 40px;
-  font-weight: bold;
-  margin: 0;
+@media (max-width: 1024px){
+  .layout{grid-template-columns:1fr}
 }
-
-.all-tournaments-btn {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 4px;
-}
-
-.status {
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  height: 100px;           
-  width: 100%;             
-  gap: 10px; 
-}
-
-.active {
-  font-weight: bold;
-  border-bottom: 2px solid #000; 
-  padding-bottom: 2px; 
-  font-size: 30px;
-}
-
-.expired {
-  color: gray; 
-  opacity: 0.6; 
-}
-.tournaments-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.table-header {
-  display: flex;
-  justify-content: space-around;
-  font-weight: 600;
-  padding: 10px 0;
-  opacity: 30%;
-}
-
-.table-header div {
-  width: 15%; 
-  text-align: center;
-}
-
-.table-row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.table-row div {
-  width: 15%; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 16px;
-}
-.table-row2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.table-row2 div {
-  width: 15%; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 16px;
-}
-.table-row3 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.table-row3 div {
-  width: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 16px;
-}
-
-.live-badge {
-  background-color: red;
-  color: #fff;
-  font-size: 12px;
-  padding: 2px 6px;
-  border-radius: 4px;
-  margin-top: 4px;
-}
-
-.checkin-btn {
-  background-color: #00444d;
-  color: white;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 600;
-}
-.checkin-btn2 {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 8px 16px;
-  stroke-width: 20px;
-  stroke: #000000;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 600;
-}
-.checkin-btn3 {
-  background-color: #00444d;
-  color: rgb(255, 255, 255);
-  padding: 8px 16px;
-    border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-
-.main-footer {
-  background: #000000;
-  padding: 40px 0;
-  line-height: 25px;
-}
-.footer-grid {
-  width: 90%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 30px;
-}
-.footer-box {
-  width: 100px;
-  height: 50px;
-  background: #ccc;
-}
-.footer-grid h4 {
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-.footer-grid ul {
-  list-style: none;
-  padding: 0;
-}
-.footer-grid ul li {
-  margin-bottom: 6px;
-}
-.footer-grid a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.partner-section {
-    background-color: white;
-    min-height: 100vh;
-    margin: 50px auto;
-    padding: 150px;
-}
-
