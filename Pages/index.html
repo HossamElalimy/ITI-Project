@@ -1,83 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="../Styles/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alle Teams</title>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
-  <!-- ====== Header ====== -->
-  <header class="main-header">
-    <div class="container">
-      <div class="logo"></div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="tournaments.html">Tournaments</a></li>
-          <li><a href="#">Rules</a></li>
-          <li><a href="partner.html">Partner</a></li>
-          <li><a href="#">Teams</a></li>
-          <li><a href="teamregister.html">Your Teams</a></li>
-        </ul>
+<body class="theme-light">
+  <header class="site-header dark">
+    <div class="container header-inner">
+      <div class="logo-box" aria-label="Arena"></div>
+      <nav class="nav">
+        <a href="#" class="nav-link is-active">Turniere</a>
+        <a href="#" class="nav-link">Regelwerk</a>
+        <a href="#" class="nav-link">Partner</a>
+        <a href="#" class="nav-link">Teams</a>
+        <a href="#" class="nav-link">Deine Teams</a>
+        <a href="#" class="nav-link">Preise</a>
       </nav>
-      <div class="auth-buttons">
-        <a href="index.html" class="btn-outline">Login</a>
-        <a href="register.html" class="btn-fill">Register</a>
-        
+      <div class="auth">
+        <button class="btn ghost">Login</button>
+        <button class="btn solid">Regristration</button>
       </div>
     </div>
   </header>
 
-  <!-- ====== Login Box ====== -->
-  <main class="login-section">
-    <div class="login-box">
-      <h1>Welcome back Shahd!</h1>
-      <form>
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Passwort" required>
-        <div class="btn-row">
-          <button type="submit" class="btn-submit">Submit</button>
-          <a href="#" class="forgot-link">Forgot your password?</a>
-        </div>
-      </form>
-      <p>Don't have an account yet? <a href="register.html">Create account </a></p>
+  <section class="hero dark">
+    <div class="container">
+      <h1 class="hero-title">Alle Teams</h1>
     </div>
+  </section>
+
+  <main class="container layout list-layout">
+    <section class="content">
+      <div class="searchbar">
+        <input id="search" type="search" placeholder="Team name" />
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.71.71l.27.28v.79L20 21.5 21.5 20l-6-6zM5 10.5a5.5 5.5 0 1111 0 5.5 5.5 0 01-11 0z"/></svg>
+      </div>
+
+      <div class="list-card">
+        <div class="list-head">
+          <div class="col logo">Logo</div>
+          <div class="col team">Team</div>
+        </div>
+        <ul id="team-list" class="list" aria-label="Teams"></ul>
+      </div>
+
+      <div class="pager-row">
+        <button id="firstBtn" class="btn ghost small">‹ Previous page</button>
+        <div id="pager" class="pager"></div>
+        <button id="lastBtn" class="btn ghost small">Next Page ›</button>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="team-card teal" id="teamCard">
+        <div class="team-card-header">
+          <div class="logo-sq"><img id="cardLogo" alt=""></div>
+          <div>
+            <div class="team-name" id="cardName">—</div>
+            <div class="kicker">Squad</div>
+          </div>
+        </div>
+        <div class="rule"></div>
+        <div class="grid2">
+          <div>
+            <div class="hdr">Mitglieder</div>
+            <div class="mini-list">Gideon<br>Benni<br>Trauni<br>Cassali</div>
+          </div>
+          <div>
+            <div class="hdr">Stand-in</div>
+            <div class="mini-list">EiNsZeHm<br>förbi</div>
+          </div>
+        </div>
+        <div class="join">
+          <input type="password" placeholder="Passwort" />
+          <button class="btn light">Joinen</button>
+        </div>
+      </div>
+    </aside>
   </main>
 
-  <!-- ====== Footer ====== -->
-  <footer class="main-footer">
-    <div class="container footer-grid">
+  <footer class="site-footer">
+    <div class="container foot-grid">
       <div>
-        <div class="footer-box"></div>
-       </div>
-      <div>
-        <h4>Menu</h4>
-        <ul>
-          <li>Tournaments</li>
-          <li>Rules</li>
-          <li>Partner</li>
-          <li>Teams</li>
-          <li>Your Teams</li>
-        </ul>
+        <div class="foot-logo"></div>
+        <p class="foot-note">Weit hinten, hinter den Wortbergen, fern der Länder Vokalen und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie.</p>
       </div>
       <div>
-        <h4>Social Media</h4>
-        <ul>
-          <li>Twitch</li>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Discord</li>
-        </ul>
+        <h5>Menu</h5>
+        <div class="foot-links">Turniere<br>Regelwerk<br>Partner<br>Teams<br>Deine Teams</div>
       </div>
       <div>
-        <h4>Contact</h4>
-        <ul>
-          <li>Do you have general questions? <a href="#">Discord Server</a></li>
-          <li>Do you have a business inquiry? <a href="#">Kontakt</a></li>
-        </ul>
+        <h5>Social Media</h5>
+        <div class="foot-links">Twitch<br>Facebook<br>Twitter<br>Discord</div>
+      </div>
+      <div>
+        <h5>Kontakt</h5>
+        <div class="foot-links">
+          Hast du allgemeine Fragen?<br><a href="#">Discord Server</a><br><br>
+          Hast du eine Businessanfrage?<br><a href="#">Kontakt</a>
+        </div>
       </div>
     </div>
   </footer>
+
+  <script>window.__TEAMS__ = [{"name": "Team Gideon", "logo": "assets/img/images.jpeg"}, {"name": "beingesports", "logo": "assets/img/a729b2f1-74c4-479f-835c-f3b1e2df373b-profile_banner-480.png"}, {"name": "Austrian Force", "logo": "assets/img/images.png"}, {"name": "Go back to the lobby", "logo": "assets/img/4.jpg"}, {"name": "Final Gaming", "logo": "assets/img/5.jpeg"}, {"name": "Night Drift", "logo": "assets/img/Night-Drift.avif"}, {"name": "Black Orbit", "logo": "assets/img/6.jpeg"}, {"name": "Quantum Link", "logo": "assets/img/7.png"}, {"name": "Neon Protocol", "logo": "assets/img/8.jpeg"}, {"name": "Zero Latency", "logo": "assets/img/9.jpg"}, {"name": "Frost bound", "logo": "assets/img/11.jpeg"}, {"name": "Obsidian Keep", "logo": "assets/img/12.jpeg"}, {"name": "Final Verdict", "logo": "assets/img/13.jpeg"}, {"name": "Hard Reset", "logo": "assets/img/14.jpg"}, {"name": "Ironclad", "logo": "assets/img/15.jpg"}];</script>
+  <script src="./app.js" defer></script>
 </body>
 </html>
-
