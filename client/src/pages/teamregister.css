@@ -1,0 +1,136 @@
+/* 1. */ .team-register-main{
+/* 2. */   background:#fff;
+/* 3. */   color:#2b3237;
+/* 4. */   min-height:60vh;
+/* 5. */ }
+
+/* 1. */ .team-register-section{
+/* 2. */   max-width:900px;
+/* 3. */   margin:0 auto;
+/* 4. */   padding:24px 28px 48px;
+/* 5. */ }
+
+/* 1. */ .tr-header{
+/* 2. */   margin-bottom:18px;
+/* 3. */ }
+/* 1. */ .tr-header h1{
+/* 2. */   margin:0;
+/* 3. */   font-weight:800;
+/* 4. */   font-size:clamp(22px,4vw,34px);
+/* 5. */   line-height:1.15;
+/* 6. */ }
+/* 1. */ .tr-sub{
+/* 2. */   margin:6px 0 0;
+/* 3. */   color:#59656d;
+/* 4. */   font-size:14px;
+/* 5. */ }
+
+/* 1. */ .team-form{
+/* 2. */   display:grid;
+/* 3. */   grid-template-columns:1fr;
+/* 4. */   gap:12px;
+/* 5. */ }
+/* 1. */ .team-form label{
+/* 2. */   font-weight:700;
+/* 3. */   font-size:13px;
+/* 4. */   color:#374148;
+/* 5. */ }
+/* 1. */ .team-form input[type="text"],
+/* 2. */ .team-form input[type="password"]{
+/* 3. */   padding:10px 12px;
+/* 4. */   border:1px solid #e1e6ea;
+/* 5. */   border-radius:6px;
+/* 6. */   font-size:14px;
+/* 7. */   outline:none;
+/* 8. */ }
+/* 1. */ .team-form input[type="text"]:focus,
+/* 2. */ .team-form input[type="password"]:focus{
+/* 3. */   border-color:#32a6ad;
+/* 4. */   box-shadow:0 0 0 2px rgba(50,166,173,.12);
+/* 5. */ }
+
+/* 1. */ .team-type{
+/* 2. */   display:grid;
+/* 3. */   grid-template-columns:1fr;
+/* 4. */   gap:8px;
+/* 5. */   margin-top:6px;
+/* 6. */ }
+/* 1. */ .team-type__label{
+/* 2. */   font-weight:700;
+/* 3. */   font-size:13px;
+/* 4. */   color:#374148;
+/* 5. */ }
+/* 1. */ .team-type-options{
+/* 2. */   display:flex;
+/* 3. */   align-items:center;
+/* 4. */   gap:12px;
+/* 5. */ }
+/* 1. */ .team-type-options input[type="radio"]{
+/* 2. */   accent-color:#0f6166;
+/* 3. */ }
+
+/* 1. */ .logo-drop{
+/* 2. */   margin-top:6px;
+/* 3. */   background:#f7f9fb;
+/* 4. */   border:2px dashed #c6d3db;
+/* 5. */   border-radius:8px;
+/* 6. */   min-height:140px;
+/* 7. */   display:flex;
+/* 8. */   align-items:center;
+/* 9. */   justify-content:center;
+/* 10. */  cursor:pointer;
+/* 11. */  text-align:center;
+/* 12. */  padding:12px;
+/* 13. */ }
+/* 1. */ .logo-drop:hover{
+/* 2. */   background:#eef3f6;
+/* 3. */ }
+/* 1. */ .logo-drop__placeholder{
+/* 2. */   display:flex;
+/* 3. */   flex-direction:column;
+/* 4. */   gap:6px;
+/* 5. */ }
+/* 1. */ .logo-drop__title{
+/* 2. */   font-weight:700;
+/* 3. */   font-size:14px;
+/* 4. */ }
+/* 1. */ .logo-drop__hint{
+/* 2. */   font-size:12px;
+/* 3. */   color:#6f7a82;
+/* 4. */ }
+
+/* 1. */ .logo-preview{
+/* 2. */   display:flex;
+/* 3. */   align-items:center;
+/* 4. */   justify-content:center;
+/* 5. */   width:100%;
+/* 6. */   max-width:260px;
+/* 7. */   aspect-ratio:1/1;
+/* 8. */   background:#fff;
+/* 9. */   border:1px solid #e1e6ea;
+/* 10. */  border-radius:8px;
+/* 11. */  overflow:hidden;
+/* 12. */ }
+/* 1. */ .logo-preview img{
+/* 2. */   width:100%;
+/* 3. */   height:100%;
+/* 4. */   object-fit:cover;
+/* 5. */ }
+
+/* 1. */ .form-actions{
+/* 2. */   margin-top:8px;
+/* 3. */   display:flex;
+/* 4. */   gap:10px;
+/* 5. */ }
+/* 1. */ .btn-primary{
+/* 2. */   background:#0f6166;
+/* 3. */   color:#eaf1f6;
+/* 4. */   border:1px solid #264a51;
+/* 5. */   padding:10px 14px;
+/* 6. */   border-radius:6px;
+/* 7. */   font-weight:700;
+/* 8. */   cursor:pointer;
+/* 9. */ }
+/* 1. */ .btn-primary:hover{
+/* 2. */   background:#163b43;
+/* 3. */ }

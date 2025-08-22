@@ -1,3 +1,4 @@
+import FrontHero from "../components/FrontHero";
 import UpcomingSection from "../components/UpcomingSection";
 import "./landing.css";
 
@@ -10,9 +11,10 @@ export default function LandingPage() {
 
   return (
     <main>
-   
+      {/* FIRST SECTION (from your Front.js) */}
+      <FrontHero />
 
-      {/* Your “second section” as components */}
+      {/* SECOND SECTION (your “next tournaments” block) */}
       <UpcomingSection items={items} />
     </main>
   );

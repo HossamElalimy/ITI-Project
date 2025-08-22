@@ -1,0 +1,83 @@
+/* 1. */ .hero-split{
+/* 2. */   display:grid;
+/* 3. */   grid-template-columns:1fr minmax(8px, 28px) 1fr;
+/* 4. */   align-items:stretch;
+/* 5. */   gap:0;
+/* 6. */   background:linear-gradient(90deg,#1a1d1f 0 66%,#2f3336 66% 98%,#1a1d1f 78% 100%);
+/* 7. */   color:#fff;
+/* 8. */ }
+
+/* 1. */ .hs-panel{
+/* 2. */   position:relative;
+/* 3. */   min-height:220px;
+/* 4. */   display:flex;
+/* 5. */   align-items:flex-end;
+/* 6. */ }
+
+/* 1. */ .hs-panel--left{ background:#1a1d1f; }
+/* 1. */ .hs-panel--right{ background:#2f3336; }
+
+/* 1. */ .hs-panel__stretch{
+/* 2. */   position:absolute; inset:0;
+/* 3. */   display:block;
+/* 4. */   text-decoration:none;
+/* 5. */ }
+
+/* 1. */ .hs-panel__content{
+/* 2. */   position:relative;
+/* 3. */   padding: clamp(20px, 4vw, 36px);
+/* 4. */   max-width: 720px;
+/* 5. */ }
+
+/* 1. */ .hs-eyebrow{
+/* 2. */   display:inline-block;
+/* 3. */   font-size:12px;
+/* 4. */   letter-spacing:.08em;
+/* 5. */   text-transform:uppercase;
+/* 6. */   opacity:.85;
+/* 7. */ }
+
+/* 1. */ .hs-title{
+/* 2. */   margin:8px 0 6px;
+/* 3. */   font-weight:800;
+/* 4. */   font-size: clamp(28px, 6vw, 44px);
+/* 5. */   line-height:1.1;
+/* 6. */ }
+
+/* 1. */ .hs-kicker{
+/* 2. */   margin:0 0 12px;
+/* 3. */   font-size: clamp(14px, 2.1vw, 18px);
+/* 4. */   opacity:.92;
+/* 5. */ }
+
+/* 1. */ .hs-cta{
+/* 2. */   display:inline-flex;
+/* 3. */   align-items:center;
+/* 4. */   gap:8px;
+/* 5. */   background:#fff;
+/* 6. */   color:#000;
+/* 7. */   font-weight:700;
+/* 8. */   text-decoration:none;
+/* 9. */   padding:8px 12px;
+/* 10. */  border:0;
+/* 11. */ }
+/* 1. */ .hs-cta:hover{
+/* 2. */   background:#18303a;
+/* 3. */   color:#fff;
+/* 4. */ }
+/* 1. */ .hs-arrow{ transform:translateY(-1px); }
+
+/* 1. */ .hs-divider{
+/* 2. */   width:100%;
+/* 3. */   background:transparent;
+/* 4. */ }
+
+/* 1. */ @media (max-width: 900px){
+/* 2. */   .hero-split{
+/* 3. */     grid-template-columns:1fr;
+/* 4. */   }
+/* 5. */   .hs-divider{
+/* 6. */     height:10px; width:auto;
+/* 7. */     background:transparent;
+/* 8. */   }
+/* 9. */ }

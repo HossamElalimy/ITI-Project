@@ -1,0 +1,83 @@
+/* 1. */ .front-hero{
+/* 2. */   background: linear-gradient(90deg,#1a1d1f 0 66%,#2f3336 66% 98%,#1a1d1f 78% 100%);
+/* 3. */   color:#fff;
+/* 4. */   padding: clamp(28px, 6vw, 72px) 0;
+/* 5. */ }
+
+/* 1. */ .front-container{
+/* 2. */   max-width:1200px;
+/* 3. */   margin:0 auto;
+/* 4. */   padding:0 28px;
+/* 5. */ }
+
+/* 1. */ .front-step{
+/* 2. */   margin:0 0 8px;
+/* 3. */   font-size:14px;
+/* 4. */   letter-spacing:.08em;
+/* 5. */   opacity:.85;
+/* 6. */ }
+
+/* 1. */ .front-title{
+/* 2. */   margin:0 0 14px;
+/* 3. */   font-weight:800;
+/* 4. */   font-size:clamp(28px, 8vw, 56px);
+/* 5. */   line-height:1.1;
+/* 6. */ }
+
+/* 1. */ .front-cta{
+/* 2. */   display:inline-block;
+/* 3. */   background:#fff;
+/* 4. */   color:#000;
+/* 5. */   text-decoration:none;
+/* 6. */   font-weight:700;
+/* 7. */   padding:10px 16px;
+/* 8. */   border:0;
+/* 9. */   margin: 6px 0 18px;
+/* 10. */  cursor:pointer;
+/* 11. */ }
+/* 1. */ .front-cta:hover{
+/* 2. */   background:#18303a;
+/* 3. */   color:#fff;
+/* 4. */ }
+
+/* ===== Cards ===== */
+/* 1. */ .tournament-cards{
+/* 2. */   display:grid;
+/* 3. */   grid-template-columns: repeat(3, minmax(0, 1fr));
+/* 4. */   gap:12px;
+/* 5. */   margin-top:18px;
+/* 6. */ }
+
+/* 1. */ .tournament-card{
+/* 2. */   display:flex;
+/* 3. */   gap:12px;
+/* 4. */   align-items:center;
+/* 5. */   padding:12px;
+/* 6. */   background:rgba(255,255,255,.06);
+/* 7. */   border:1px solid rgba(255,255,255,.12);
+/* 8. */   border-radius:6px;
+/* 9. */ }
+/* 1. */ .tournament-card strong{
+/* 2. */   font-size:18px;
+/* 3. */   font-weight:800;
+/* 4. */   line-height:1;
+/* 5. */ }
+/* 1. */ .tournament-card h4{
+/* 2. */   margin:0;
+/* 3. */   font-size:14px;
+/* 4. */   font-weight:700;
+/* 5. */ }
+/* 1. */ .tournament-card p{
+/* 2. */   margin:2px 0 0;
+/* 3. */   font-size:12px;
+/* 4. */   opacity:.9;
+/* 5. */ }
+/* 1. */ .tournament-card.disabled{
+/* 2. */   opacity:.55;
+/* 3. */   filter:saturate(.6);
+/* 4. */ }
+
+/* ===== Responsive ===== */
+/* 1. */ @media (max-width: 900px){
+/* 2. */   .tournament-cards{ grid-template-columns: 1fr; }
+/* 3. */ }
