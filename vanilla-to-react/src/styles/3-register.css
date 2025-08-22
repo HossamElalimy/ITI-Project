@@ -1,0 +1,46 @@
+.register-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.register-box {
+  background: #fff;
+  padding: 40px;
+  width: 400px;
+}
+
+.register-box h1 {
+  margin-bottom: 20px;
+}
+
+.register-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-submit {
+  background: #004d4d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.register-box p {
+  margin-top: 20px;
+}
+
+.register-box p a {
+  color: #004d4d;
+  text-decoration: none;
+}

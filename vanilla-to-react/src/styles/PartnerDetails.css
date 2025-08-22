@@ -1,0 +1,110 @@
+.partner-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  display: flex;
+  background: #1f2a40;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 900px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.partner-img {
+  width: 350px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 30px;
+  flex: 1;
+}
+
+.info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #00c6ff;
+}
+
+.desc {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.extra {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 25px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon.facebook:hover {
+  color: #1877f2;
+  transform: scale(1.2);
+}
+
+.icon.twitter:hover {
+  color: #1da1f2;
+  transform: scale(1.2);
+}
+
+.icon.youtube:hover {
+  color: #ff0000;
+  transform: scale(1.2);
+}
+
+.icon.instagram:hover {
+  color: #e4405f;
+  transform: scale(1.2);
+}
+
+.icon.website:hover {
+  color: #00c6ff;
+  transform: scale(1.2);
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00c6ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background: #0072ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
