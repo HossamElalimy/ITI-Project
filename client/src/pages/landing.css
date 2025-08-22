@@ -1,0 +1,63 @@
+/* 1. */ .home-hero{
+/* 2. */   background: linear-gradient(90deg,#1a1d1f 0 66%,#2f3336 66% 98%,#1a1d1f 78% 100%);
+/* 3. */   color:#fff;
+/* 4. */   padding: clamp(32px,6vw,72px) 0;
+/* 5. */ }
+
+/* 1. */ .home-hero__container{
+/* 2. */   max-width:1200px;
+/* 3. */   margin:0 auto;
+/* 4. */   padding:0 28px;
+/* 5. */   display:grid;
+/* 6. */   grid-template-columns:1fr 320px;
+/* 7. */   gap:24px;
+/* 8. */   align-items:end;
+/* 9. */ }
+
+/* 1. */ .home-hero__content{
+/* 2. */   display:flex;
+/* 3. */   flex-direction:column;
+/* 4. */   gap:14px;
+/* 5. */ }
+
+/* 1. */ .home-hero__title{
+/* 2. */   margin:0;
+/* 3. */   font-weight:800;
+/* 4. */   font-size: clamp(28px, 8vw, 56px);
+/* 5. */   line-height:1.1;
+/* 6. */ }
+
+/* 1. */ .home-hero__subtitle{
+/* 2. */   margin:0;
+/* 3. */   font-size:clamp(14px, 2.2vw, 18px);
+/* 4. */   opacity:.9;
+/* 5. */ }
+
+/* 1. */ .home-hero__cta{
+/* 2. */   width:max-content;
+/* 3. */   padding:10px 16px;
+/* 4. */   font-weight:700;
+/* 5. */   background:#fff;
+/* 6. */   color:#000;
+/* 7. */   border:0;
+/* 8. */   cursor:pointer;
+/* 9. */ }
+/* 1. */ .home-hero__cta:hover{
+/* 2. */   background:#18303a;
+/* 3. */   color:#fff;
+/* 4. */ }
+
+/* 1. */ .home-hero__side{
+/* 2. */   height:100%;
+/* 3. */   min-height:120px;
+/* 4. */   background:#2f3336;
+/* 5. */ }
+
+/* 1. */ @media (max-width: 768px){
+/* 2. */   .home-hero__container{
+/* 3. */     grid-template-columns:1fr;
+/* 4. */   }
+/* 5. */   .home-hero__side{
+/* 6. */     display:none;
+/* 7. */   }
+/* 8. */ }

@@ -1,0 +1,18 @@
+/* 1. */ .upsec{
+/* 2. */   background:#fff;
+/* 3. */   color:#2b3237;
+/* 4. */ }
+/* 1. */ .upsec__container{
+/* 2. */   max-width:1200px;
+/* 3. */   margin:0 auto;
+/* 4. */   padding:18px 28px 40px;
+/* 5. */ }
+/* 1. */ .upsec__grid{
+/* 2. */   display:grid;
+/* 3. */   grid-template-columns:minmax(220px,320px) 1fr;
+/* 4. */   gap:24px;
+/* 5. */   align-items:start;
+/* 6. */ }
+/* 1. */ @media (max-width: 900px){
+/* 2. */   .upsec__grid{ grid-template-columns:1fr; }
+/* 3. */ }
